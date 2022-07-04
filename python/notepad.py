@@ -19,7 +19,7 @@ def loadFile():
     else:
         errorBox = messagebox.showerror("Error loading", "Please enter a file name to load.")
 
-title = Label(root, text="Notepad", bg="gray", width=70, font="Arial 30")
+title = Label(root, text="Notepad", bg="gray", width=70, font="Arial 30", height="2")
 title.grid(row=0, column=0, columnspan=3)
 
 userEntry = Entry(root, width=40, font="Arial 20")
@@ -35,5 +35,5 @@ fileName.bind("<Return>", saveFile)
 
 loadButton = Button(root, text="Load", bg="gray", command=loadFile, width=15, height=3, font="Arial 10")
 loadButton.grid(row=2, column=2)
-# testing commit
+
 root.mainloop()
